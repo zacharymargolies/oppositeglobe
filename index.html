@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:100,300,400,600" rel="stylesheet" type="text/css">
+        <link href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css">
+        <link type="text/css" rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <title>Opposite Globe</title>
+    </head>
+    <body>
+        
+        <div class="top">
+            <div class="current__coordinates">
+                <div class="coordinates__title">
+                    Your current location:
+                </div>
+                
+                
+                
+                <div class="current__latitude__title clearfix">
+                    <div class="latitude__title--text">Latitude</div>
+                    <div class="right">
+                        <div class="latitude__title--value">Loading</div>
+                    </div>
+                </div>
+                
+                <div class="current__longitude__title clearfix">
+                    <div class="longitude__title--text">Longitude</div>
+                    <div class="right clearfix">
+                        <div class="longitude__title--value">Loading</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="opposite__coordinates">
+                <div class="coordinates__title">
+                    Your opposite location:
+                </div>
+                
+                
+                
+                <div class="opposite__latitude__title clearfix">
+                    <div class="latitude__title--text">Latitude</div>
+                    <div class="right">
+                        <div class="latitude__title--value" id="opposite--latitude">...</div>
+                    </div>
+                </div>
+                
+                <div class="opposite__longitude__title clearfix">
+                    <div class="longitude__title--text">Longitude</div>
+                    <div class="right clearfix">
+                        <div class="longitude__title--value" id="opposite--longitude">...</div>
+                    </div>
+                </div>
+            </div>
+			
+			
+			<button class="opposite__location" id="opposite"><i class="ion-map"></i></button>
+			
+			
+        </div>
+        
+		
+		
+		
+            <div class="add">
+               
+                    <div class="row">
+                    
+					<div class="col-sm-4 col-centered">
+                        <input type="text" class="address" placeholder="Manually type an address here">
+                    </div>
+					<div style="padding-left: 0px; padding-right: 0px;" class="col-sm-1">
+						<p>or</p>
+                    </div>
+                    <div class="col-sm-3 col-centered">
+                        <input type="number" class="latitude" placeholder="Input Latitude">
+                    </div>
+                    <div class="col-sm-3 col-centered">
+                        <input type="number" class="longitude" placeholder="Input Longitude">
+                    </div>
+                        <div class="col-sm-1">
+                        <button class="add__btn"><i class="ion-ios-checkmark-outline"></i></button>
+                        </div>
+                    </div>
+                
+            </div>
+        
+        <div id="map"></div>
+        
+    <script src="app.js"></script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCfsg8HmYadQ5R_-9h5oUzfF5NUNEqdlZo&callback=initMap">
+    </script>
+    </body>
+
+</html>
